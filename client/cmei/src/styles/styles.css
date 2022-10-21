@@ -1,0 +1,84 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100%;
+  background: #f5f5f5;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.menuIcon {
+  color: #fff;
+}
+.active > li {
+  background: #27607F;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+.active > li.opened {
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.active * {
+  color: #fff;
+}
+li.opened {
+  margin-left: 0.75rem;
+}
+li {
+  transition: all 0.3s;
+}
+
+.tabPanel {
+  margin: 2rem;
+}
+
+.error {
+  margin: 0.75rem 0 0.5rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: #b0151b;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.90625rem;
+}
+
+.MuiAlert-icon svg {
+  color: #fff;
+}
+
+.expandable-row {
+  position: relative;
+  margin-top: -20px;
+}
+.expandable-row::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% + 1rem);
+  height: 22px;
+  margin: 6px 0 0 -16px;
+  background: #fff;
+  z-index: 100;
+}
+.expandable-row::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: calc(100% + 0.25rem);
+  height: 8px;
+  margin: 12px 0 0 -4px;
+  background: #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+  z-index: 50;
+}
