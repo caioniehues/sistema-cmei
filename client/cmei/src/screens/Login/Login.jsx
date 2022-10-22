@@ -69,7 +69,7 @@ const Login = () => {
             size="large"
             style={{ margin: "1.5rem 0" }}
             onClick={() => clearErrors()}
-            isLoading={isProcessing}
+            // isLoading={isProcessing}
           >
             Entrar
           </Button>
